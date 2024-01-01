@@ -2,7 +2,7 @@
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
 
-namespace MoreAttributePoints.Settings {
+namespace BetterAttributePoints.Settings {
 
     internal class MCMSettings : AttributeGlobalSettings<MCMSettings>, ISettings {
 
@@ -23,7 +23,7 @@ namespace MoreAttributePoints.Settings {
 
 
         public override string Id { get { return base.GetType().Assembly.GetName().Name; } }
-        public override string DisplayName { get; } = "More Attribute Points";
+        public override string DisplayName { get; } = "Better Attribute Points";
         public override string FolderName { get { return base.GetType().Assembly.GetName().Name; } }
         public override string FormatType { get; } = "xml";
         public bool LoadMCMConfigFile { get; set; } = true;

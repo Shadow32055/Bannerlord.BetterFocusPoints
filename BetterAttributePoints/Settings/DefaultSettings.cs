@@ -1,5 +1,5 @@
 ﻿
-namespace MoreAttributePoints.Settings {
+namespace BetterAttributePoints.Settings {
     public class DefaultSettings : ISettings {
        
         public int levelsPerAttributePoint { get; set; } = 4;

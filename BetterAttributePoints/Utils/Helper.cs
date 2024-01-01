@@ -1,10 +1,10 @@
-﻿using MoreAttributePoints.Settings;
+﻿using BettterAttributePoints.Settings;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace MoreAttributePoints.Utils {
+namespace BetterAttributePoints.Utils {
     public class Helper {
         public static string modName = "ForgotToSet";
         public static ISettings settings;

@@ -1,5 +1,5 @@
 ﻿
-namespace MoreAttributePoints.Settings {
+namespace BetterAttributePoints.Settings {
     public interface ISettings {
 
         int levelsPerAttributePoint { get; set; }

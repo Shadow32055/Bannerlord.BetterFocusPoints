@@ -1,5 +1,4 @@
-﻿using MoreAttributePoints.Utils;
-using System;
+﻿using BetterAttributePoints.Utils;
 using TaleWorlds.CampaignSystem;
 
 namespace MoreAttributePoints.Custom {

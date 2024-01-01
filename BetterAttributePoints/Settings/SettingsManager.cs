@@ -3,11 +3,11 @@ using System.IO;
 using System.Xml;
 using System.Text;
 using TaleWorlds.Library;
-using MoreAttributePoints.Utils;
+using BetterAttributePoints.Utils;
 using System.Xml.Serialization;
 using MCM.Abstractions.Base.Global;
 
-namespace MoreAttributePoints.Settings {
+namespace BetterAttributePoints.Settings {
 	public class SettingsManager {
 
 		private static ISettings? instance;

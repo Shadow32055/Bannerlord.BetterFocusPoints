@@ -1,18 +1,18 @@
 ﻿using HarmonyLib;
-using MoreAttributePoints.Utils;
-using MoreAttributePoints.Settings;
+using BetterAttributePoints.Utils;
+using BetterAttributePoints.Settings;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using MoreAttributePoints.Custom;
 
-namespace MoreAttributePoints {
+namespace BetterAttributePoints {
 	public class SubModule : MBSubModuleBase {
 
 		protected override void OnSubModuleLoad() {
 			base.OnSubModuleLoad();
 
-			Harmony h = new Harmony("Bannerlord.Shadow.MoreAttributePoints");
+			Harmony h = new Harmony("Bannerlord.Shadow.BetterAttributePoints");
 
 
             h.PatchAll();

@@ -1,8 +1,8 @@
-﻿using MoreAttributePoints.Utils;
+﻿using BetterAttributePoints.Utils;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem.GameComponents;
 
-namespace MoreAttributePoints.Patches {
+namespace BetterAttributePoints.Patches {
     [HarmonyPatch(typeof(DefaultCharacterDevelopmentModel))]
     class DefaultCharacterDevelopmentModelPatch {
 
