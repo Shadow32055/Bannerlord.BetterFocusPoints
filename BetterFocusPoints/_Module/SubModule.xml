@@ -1,6 +1,6 @@
 <Module>
-  <Name value="Better Attribute Points" />
-  <Id value="BetterAttributePoints" />
+  <Name value="Better Focus Points" />
+  <Id value="BetterFocusPoints" />
   <Version value="d0.0.0" />
   <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
@@ -10,9 +10,9 @@
   </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="BetterAttributePoints" />
-      <DLLName value="BetterAttributePoints.dll" />
-      <SubModuleClassType value="BetterAttributePoints.SubModule" />
+      <Name value="BetterFocusPoints" />
+      <DLLName value="BetterFocusPoints.dll" />
+      <SubModuleClassType value="BetterFocusPoints.SubModule" />
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />
