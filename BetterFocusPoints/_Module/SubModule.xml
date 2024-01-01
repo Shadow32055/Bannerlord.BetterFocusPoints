@@ -1,13 +1,16 @@
 <Module>
-  <Name value="Better Focus Points" />
+  <Name value="BetterFocusPoints" />
   <Id value="BetterFocusPoints" />
   <Version value="d0.0.0" />
   <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
   <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/6269" />
   <DependedModules>
-    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.3.*" />
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.3.0" />
   </DependedModules>
+  <DependedModuleMetadatas>
+    <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" version="v2.3.0" />
+  </DependedModuleMetadatas>
   <SubModules>
     <SubModule>
       <Name value="BetterFocusPoints" />
