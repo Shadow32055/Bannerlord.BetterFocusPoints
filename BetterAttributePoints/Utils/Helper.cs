@@ -1,4 +1,4 @@
-﻿using BettterAttributePoints.Settings;
+﻿using BetterAttributePoints.Settings;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;

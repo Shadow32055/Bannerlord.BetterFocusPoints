@@ -1,14 +1,18 @@
 <Module>
-  <Name value="More Attribute Points" />
-  <Id value="MoreAttributePoints" />
+  <Name value="Better Attribute Points" />
+  <Id value="BetterAttributePoints" />
   <Version value="d0.0.0" />
   <ModuleType value="Community" />
   <ModuleCategory value="Singleplayer" />
+  <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/6269" />
+  <DependedModules>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="v2.3.*" />
+  </DependedModules>
   <SubModules>
     <SubModule>
-      <Name value="MoreAttributePoints" />
-      <DLLName value="MoreAttributePoints.dll" />
-      <SubModuleClassType value="MoreAttributePoints.SubModule" />
+      <Name value="BetterAttributePoints" />
+      <DLLName value="BetterAttributePoints.dll" />
+      <SubModuleClassType value="BetterAttributePoints.SubModule" />
       <Tags>
         <Tag key="DedicatedServerType" value="none" />
         <Tag key="IsNoRenderModeElement" value="false" />
