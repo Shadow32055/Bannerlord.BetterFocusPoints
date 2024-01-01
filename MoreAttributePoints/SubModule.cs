@@ -2,6 +2,9 @@
 using MoreAttributePoints.Utils;
 using MoreAttributePoints.Settings;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.CampaignSystem;
+using TaleWorlds.Core;
+using MoreAttributePoints.Custom;
 
 namespace MoreAttributePoints {
 	public class SubModule : MBSubModuleBase {
@@ -11,15 +14,23 @@ namespace MoreAttributePoints {
 
 			Harmony h = new Harmony("Bannerlord.Shadow.MoreAttributePoints");
 
-            //*** Manual patching reference
-            //MethodInfo original = typeof(Hero).GetProperty("AddSkillXp").GetGetMethod();
-            //MethodInfo postfix = typeof(XPPatch).GetMethod("AddSkillXp");
-            //h.Patch(original, postfix: new HarmonyMethod(postfix));
 
             h.PatchAll();
 		}
 
-		protected override void OnBeforeInitialModuleScreenSetAsRoot() {
+        protected override void OnGameStart(Game game, IGameStarter gameStarter) {
+            base.OnGameStart(game, gameStarter);
+
+            if (game.GameType is Campaign) {
+                Campaign campaign = (Campaign)game.GameType;
+
+                if (campaign != null) {
+                    campaign.AddCampaignEventReceiver(new AddAttributePoints());
+                }
+            }
+        }
+
+        protected override void OnBeforeInitialModuleScreenSetAsRoot() {
 			base.OnBeforeInitialModuleScreenSetAsRoot();
 
 			string modName = base.GetType().Assembly.GetName().Name;

@@ -4,5 +4,6 @@ namespace MoreAttributePoints.Settings {
 
         int levelsPerAttributePoint { get; set; }
         int maxAttributeLevel { get; set; }
+        int extraAttPointsPerLevel { get; set; }
     }
 }

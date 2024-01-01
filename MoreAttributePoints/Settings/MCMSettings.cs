@@ -1,7 +1,6 @@
 ﻿using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
-using MCM.Common;
 
 namespace MoreAttributePoints.Settings {
 
@@ -11,11 +10,15 @@ namespace MoreAttributePoints.Settings {
 
         [SettingPropertyGroup(attributeText)]
         [SettingPropertyInteger("{=BA_GU6Ibm}Levels Per Attribute Point", 1, 10, "0", Order = 0, RequireRestart = false, HintText = "{=BA_VhEAx3}How many levels you need to gain to get an attribute point.")]
-        public int levelsPerAttributePoint { get; set; } = 3;
+        public int levelsPerAttributePoint { get; set; } = 4;
 
         [SettingPropertyGroup(attributeText)]
         [SettingPropertyInteger("{=BA_KAggxW}Max Attribute Level", 0, 100, "0", Order = 0, RequireRestart = false, HintText = "{=BA_TAtfSS}Maximum level for attributes.")]
         public int maxAttributeLevel { get; set; } = 10;
+
+        [SettingPropertyGroup(attributeText)]
+        [SettingPropertyInteger("{=BA_IhtaxW}Extra Points Per Level", 0, 100, "0", Order = 0, RequireRestart = false, HintText = "{=BA_T5Ylpe}Extra attribute points per level.")]
+        public int extraAttPointsPerLevel { get; set; } = 0;
 
 
 
