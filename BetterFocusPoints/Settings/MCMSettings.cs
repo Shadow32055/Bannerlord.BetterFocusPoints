@@ -4,7 +4,7 @@ using MCM.Abstractions.Base.Global;
 
 namespace BetterFocusPoints.Settings {
 
-    internal class MCMSettings : AttributeGlobalSettings<MCMSettings>, ISettings {
+    public class MCMSettings : AttributeGlobalSettings<MCMSettings> {
 
         const string focusText = "{BA_OUkZom}Focus Points";
 
