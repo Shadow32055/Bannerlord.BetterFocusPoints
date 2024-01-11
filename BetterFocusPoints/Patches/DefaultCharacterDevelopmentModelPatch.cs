@@ -11,9 +11,9 @@ namespace BetterFocusPoints.Patches {
         [HarmonyPatch(typeof(DefaultCharacterDevelopmentModel), nameof(DefaultCharacterDevelopmentModel.FocusPointsPerLevel), MethodType.Getter)]
         public static void FocusPointsPerLevel(ref int __result) {
             try {
-                __result = SubModule._settings.focusPointsPerLevel;
+                __result = BetterFocusPoints.Settings.focusPointsPerLevel;
             } catch (Exception e) {
-                Logger.SendMessage("DefaultCharacterDevelopmentModel.FocusPointsPerLevel threw exception: " + e, Severity.High);
+                NotifyHelper.ReportError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.FocusPointsPerLevel threw exception: " + e);
             }
         }
 
@@ -21,9 +21,9 @@ namespace BetterFocusPoints.Patches {
         [HarmonyPatch(typeof(DefaultCharacterDevelopmentModel), nameof(DefaultCharacterDevelopmentModel.MaxFocusPerSkill), MethodType.Getter)]
         public static void MaxFocusPerSkill(ref int __result) {
             try {
-                __result = SubModule._settings.maxFocusPointsPerSkill;
+                __result = BetterFocusPoints.Settings.maxFocusPointsPerSkill;
             } catch (Exception e) {
-                Logger.SendMessage("DefaultCharacterDevelopmentModel.MaxFocusPerSkill threw exception: " + e, Severity.High);
+                NotifyHelper.ReportError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.MaxFocusPerSkill threw exception: " + e);
             }
         }
     }
