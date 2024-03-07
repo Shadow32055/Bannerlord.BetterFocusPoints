@@ -7,7 +7,7 @@ using TaleWorlds.MountAndBlade;
 namespace BetterFocusPoints {
     public class BetterFocusPoints : MBSubModuleBase {
 
-        public static MCMSettings Settings { get; private set; }
+        public static MCMSettings Settings { get; private set; } = new MCMSettings();
         public static string ModName { get; private set; } = "BetterFocusPoints";
 
         private bool isInitialized = false;
@@ -27,7 +27,7 @@ namespace BetterFocusPoints {
 
                 isInitialized = true;
             } catch (Exception e) {
-                NotifyHelper.ReportError(ModName, "OnSubModuleLoad threw exception " + e);
+                NotifyHelper.WriteError(ModName, "OnSubModuleLoad threw exception " + e);
             }
         }
 
@@ -43,12 +43,12 @@ namespace BetterFocusPoints {
 
                 Settings = MCMSettings.Instance ?? throw new NullReferenceException("Settings are null");
 
-                NotifyHelper.ChatMessage(ModName + " Loaded.", MsgType.Good);
+                NotifyHelper.WriteMessage(ModName + " Loaded.", MsgType.Good);
                 Integrations.BetterFocusPointsLoaded = true;
 
                 isLoaded = true;
             } catch (Exception e) {
-                NotifyHelper.ReportError(ModName, "OnBeforeInitialModuleScreenSetAsRoot threw exception " + e);
+                NotifyHelper.WriteError(ModName, "OnBeforeInitialModuleScreenSetAsRoot threw exception " + e);
             }
         }
     }

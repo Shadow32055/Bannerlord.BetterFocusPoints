@@ -21,6 +21,5 @@ namespace BetterFocusPoints.Settings {
         public override string DisplayName { get { return base.GetType().Assembly.GetName().Name; } }
         public override string FolderName { get { return base.GetType().Assembly.GetName().Name; } }
         public override string FormatType { get; } = "xml";
-        public bool LoadMCMConfigFile { get; set; } = true;
     }
 }

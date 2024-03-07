@@ -13,7 +13,7 @@ namespace BetterFocusPoints.Patches {
             try {
                 __result = BetterFocusPoints.Settings.focusPointsPerLevel;
             } catch (Exception e) {
-                NotifyHelper.ReportError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.FocusPointsPerLevel threw exception: " + e);
+                NotifyHelper.WriteError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.FocusPointsPerLevel threw exception: " + e);
             }
         }
 
@@ -23,7 +23,7 @@ namespace BetterFocusPoints.Patches {
             try {
                 __result = BetterFocusPoints.Settings.maxFocusPointsPerSkill;
             } catch (Exception e) {
-                NotifyHelper.ReportError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.MaxFocusPerSkill threw exception: " + e);
+                NotifyHelper.WriteError(BetterFocusPoints.ModName, "DefaultCharacterDevelopmentModel.MaxFocusPerSkill threw exception: " + e);
             }
         }
     }
